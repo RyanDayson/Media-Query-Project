@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <section class="img">
+          <img
+            src="data:image/png;base64,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"
+            alt="Clarusway"
+          />
+        </section>
+        <section class="buttons">
+          <button class="light">Apply Courses</button>
+          <button class="dark">Talk To Advisor</button>
+        </section>
+      </nav>
+      <header>
+        <section class="yazılar">
+          <h2>The IT Career of Your Dreams Starts Here!</h2>
+          <p>
+            Clarusway is a leading international software Bootcamp. Join a micro
+            class online with other trainees and learn coding skills with a
+            highly-skilled instructor.
+          </p>
+          <button class="dark">Start oyur new career</button>
+        </section>
+        <section>
+          <img src="./img/hero.png" alt="" />
+        </section>
+      </header>
+      <main>
+        <section class="card">
+          <article>
+            <h2>Learning By Doing</h2>
+            <p>
+              You will receive one-to-one (1:1) attention in our mentor class.
+              You can reach out to experts and get your questions answered 24/7.
+              We help by giving you the shortcuts and coaching tips you need to
+              get job-ready faster than any other IT Bootcamp.
+            </p>
+          </article>
+
+          <article>
+            <img src="./img/main1.jpg" alt="courses" />
+          </article>
+        </section>
+
+        <section class="card" id="reverse">
+          <article>
+            <h2>Meet Our Alumni</h2>
+            <p>
+              Upskilled over 3,000 students and graduates from around the world.
+              They’re successfully working in the IT industry and part of our
+              alumni network. Meet our alumni online and hear their success
+              stories. Learn how you can become a member of the Clarusway family
+              and get the career you’ve always dreamed of – it’s your turn to
+              shine!,
+            </p>
+          </article>
+
+          <article><img src="./img/main2.jpg" alt="learning" /></article>
+        </section>
+
+        <section class="card">
+          <article>
+            <h2>Our Courses</h2>
+            <p>
+              Whether you are starting now or a professional on IT, we help to
+              change your career. Our process is designed to lead each and every
+              student to a successful professional career in the emerging global
+              marketplace. We offer programs that enable you to level up.
+            </p>
+          </article>
+
+          <article><img src="./img/main3.jpg" alt="meet" /></article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
